@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary to decimal</title>
+    <!-- phosphor icon script-->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script defer src="/bin2dec.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Import fira google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="header">Binary to decimal</h1>
+    <main class="box-center">
+      <div class="box-bin">
+        <input type="number" placeholder="0" id="binary" />
+        <span>BINARY</span>
+      </div>
+      <div class="icon"><i class="ph-caret-circle-down"></i></div>
+      <div class="box-dec">
+        <span id="decimal">0</span>
+        <span>DECIMAL</span>
+      </div>
+      <div class="box-btn">
+        <button id="btn-send" class="btn">Convert</button>
+      </div>
+    </main>
+  </body>
+</html>
