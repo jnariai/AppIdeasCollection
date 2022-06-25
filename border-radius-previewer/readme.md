@@ -27,4 +27,4 @@ The border-radius property can have multiple values changed. Preview how the sha
 
 ## Screenshot of the project
 
-![border-previewer](./brp.png)
+![border-previewer](./border-previewer.png)
