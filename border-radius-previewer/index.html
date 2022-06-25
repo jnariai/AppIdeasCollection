@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border radius previewer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <main class="box-main">
+      <div class="topRow">
+        <div class="topL">
+          <p>Top left</p>
+          <input type="number" id="inputTL" />
+        </div>
+        <div class="topR">
+          <p>Top right</p>
+          <input type="number" id="inputTR" />
+        </div>
+      </div>
+      <div class="bottomRow">
+        <div class="bottomL">
+          <p>Bottom left</p>
+          <input type="number" id="inputBL" />
+        </div>
+        <div class="bottomR">
+          <p>Bottom right</p>
+          <input type="number" id="inputBR" />
+        </div>
+      </div>
+      <div class="btnBox">
+        <button id="btn">Submit</button>
+        <button id="btnCopy">Copy CSS</button>
+      </div>
+    </main>
+    <div id="boxPreview">Round me</div>
+  </body>
+</html>
