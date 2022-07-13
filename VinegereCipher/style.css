@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --black: #15141b;
+  --white: #edecee;
+  --gray: #6d6d6d;
+  --purple: #a277ff;
+  --purple-fading: #3d375e7f;
+  --green: #61ffca;
+  --green-dark: hsla(160, 100%, 69%, 0.274);
+  --orange: #ffca85;
+  --pink: #f694ff;
+  --blue: #82e2ff;
+  --red: #ff6767;
+
+  --background-color: var(--black);
+  --foreground-color: var(--white);
+  --muted-color: var(--gray);
+  --selection-color: var(--purple-fading);
+  --primary-color: var(--purple);
+  --secondary-color: var(--green);
+  --tertiary-color: var(--orange);
+  --quaternary-color: var(--pink);
+  --quinary-color: var(--blue);
+  --senary-color: var(--red);
+
+  --warning-color: var(--orange);
+  --success-color: var(--green);
+  --error-color: var(--red);
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--primary-color);
+  font-family: sans-serif;
+  margin-inline: auto;
+}
+
+.main-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-inline: auto;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.title {
+  color: var(--primary-color);
+  font-weight: 800;
+  align-self: center;
+  margin-inline: auto;
+}
+p,
+textarea {
+  font-size: medium;
+}
+#input-text,
+#input-key,
+.result-field {
+  background-color: var(--background-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  color: var(--primary-color);
+  padding: 0 0 0 1rem;
+}
+#input-text:disabled,
+#input-key:disabled {
+  color: var(--muted-color);
+  border-color: var(--muted-color);
+}
+
+#input-text {
+  resize: none;
+  width: 80%;
+  height: 8rem;
+  margin-inline: auto;
+  padding-top: 0.5rem;
+  font-size: x-large;
+}
+
+#input-key {
+  width: 80%;
+  height: 3rem;
+}
+.key-container {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.3rem;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+}
+.btn {
+  border-radius: 2rem;
+  border-color: var(--secondary-color);
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  padding: 0.5rem;
+}
+
+.btn:hover {
+  background-color: var(--green-dark);
+}
+
+.btn:disabled {
+  color: var(--muted-color);
+  border-color: var(--muted-color);
+}
+
+#result-title {
+  align-self: center;
+  font-weight: 600;
+}
+.result-field {
+  margin-top: -1.1rem;
+  width: 80%;
+  margin-inline: auto;
+  height: 10rem;
+}
+
+.compare-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0 0 1rem;
+  gap: 10rem;
+}
+.btnCompare-container {
+  margin: 1.5rem 0 0 5rem;
+}
+.compareMessage-container {
+  width: 30rem;
+  padding: 1rem;
+}
+
+/* ================== Desktop CSS ======================= */
+@media screen and (min-width: 1000px) {
+  body {
+    margin-inline: auto;
+
+    max-width: 1000px;
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vigenere Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="main-block">
+      <h1 class="title">Vinegere Cipher</h1>
+      <textarea
+        id="input-text"
+        cols="30"
+        rows="10"
+        placeholder="Type what do you like to encrypt"
+      ></textarea>
+      <div class="key-container">
+        <p>Key:</p>
+        <input id="input-key" type="text" placeholder="Encryption key" />
+      </div>
+      <div class="btn-container">
+        <button class="btn" id="btn-encrypt">Encrypt</button>
+        <button class="btn" disabled id="btn-decrypt">Decrypt</button>
+      </div>
+      <h2 id="result-title">Your encrypted message</h2>
+
+      <div class="result-field">
+        <p id="result-text"></p>
+      </div>
+      <div class="compare-container">
+        <span class="btnCompare-container">
+          <button class="btn" disabled id="btn-compare">Compare</button>
+        </span>
+        <span class="compareMessage-container">
+          <p id="compare-message"></p>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
